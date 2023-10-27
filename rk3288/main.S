@@ -5,7 +5,7 @@ _start:
 
 main:
 	@ Enable jtag on GPIO6C pins
-	ldr r0, =0b00000111111111110000001010101010
+	ldr r0, =0x07ff02aa
 
 	ldr r1, GRF_GPIO6C_IOMUX
 	str r0, [r1]
