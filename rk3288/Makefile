@@ -1,6 +1,6 @@
 CROSS_COMPILE = arm-none-eabi-
 
-ROOTFS_IMG?=/home/giuliobenetti/git/amarula/br/output-br-4.4/images/sdcard.img
+ROOTFS_IMG?=/home/giuliobenetti/sdcard.img
 
 boot.img: boot.bin
 	mkimage -n rk3288 -T rksd -d $< $@
